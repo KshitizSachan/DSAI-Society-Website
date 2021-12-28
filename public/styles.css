@@ -1,8 +1,95 @@
-h1 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 500;
-  }
-  
 .iconSpacing{
-  padding: 5%;
+    margin: 20px 10px;
+}
+
+.iconLayout{
+  text-align: center;
+}
+
+/* nav-bar  */
+.dropDownLink{
+  color: #fff;
+}
+.dropDownLink:hover{
+  color:#9F9DDD
+}
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  text-align: center;
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+.color-style{
+  background-color: #01001F;
+  color: #9F9DDD;
+}
+
+.link-color{
+  color: white;
+}
+
+.link-color:hover{
+  color: #9F9DDD;
+}
+
+.rule-styling{
+  border: 2px solid #5E5D8C;
+  margin: 0px;
+}
+
+/* Home page styling */
+
+.homeTopContainer{
+  padding-top: 14%;
+  padding-bottom: 18%;
+  padding-left: 12%;
+  background-color: #01001F;
+  color: white;
+}
+
+.dsaiScoietyh1{
+  font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin-top: 10%;
+} 
+
+.IIITDWDp{
+  font-family: "Roboto Mono", monospace;
+  margin-top: 3%;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.btn-default{
+  background-color: #01001F;
+  border-color: #5E5D8C;
+  border: 5px solid;
+  color: white;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  background-color:#5E5D8C;
+  color:#FFF;
+}
+
+.homeAnimation{
+  margin-left: 10%;
+  margin-bottom: 10%;
 }
