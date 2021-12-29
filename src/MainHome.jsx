@@ -1,10 +1,13 @@
 import React from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faAngleDoubleDown} from '@fortawesome/free-solid-svg-icons'
 
 function Home(){
     return(
         <section>
-        <div className="homeTopContainer">
+        <div className="homeTopContainer" >
+            <img src="../Images/society-img.png" className="img-style"></img>
             <div className="row ">
                 <div className="col-lg-6">
                     <h1 className="dsaiScoietyh1">DSAI Society</h1>
@@ -15,6 +18,7 @@ function Home(){
                     <video src="../Videos/animation.mp4" autoPlay={true} loop={true} width={450} className="homeAnimation"/>
                 </div> 
             </div>
+            <FontAwesomeIcon className="arrowIcon" size="4x" icon={faAngleDoubleDown}/>
         </div>
         </section>
     );

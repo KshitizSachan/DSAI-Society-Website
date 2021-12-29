@@ -56,11 +56,16 @@
 /* Home page styling */
 
 .homeTopContainer{
-  padding-top: 14%;
-  padding-bottom: 18%;
+  padding-top: 3%;
+  padding-bottom: 10%;
   padding-left: 12%;
+  padding-right: 5%;
   background-color: #01001F;
   color: white;
+}
+
+.img-style{
+  width: 8%;
 }
 
 .dsaiScoietyh1{
@@ -92,4 +97,12 @@
 .homeAnimation{
   margin-left: 10%;
   margin-bottom: 10%;
+  margin-right:4%;
+  height: 70%;
+}
+
+.arrowIcon{
+  color: #5E5D8C;
+  position: absolute;
+  left:50%
 }
