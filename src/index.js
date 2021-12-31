@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from "./Navbar";
-import MainHome from "./MainHome";
-import NewsAnnouncements from './newsAndEvents'
-import Footer from './Footer';
+import Home from './Components/Home';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import About from './Components/About';
+import Blog from './Components/Blog';
 
 ReactDOM.render(
-    <div>
-        <Header />
-        <hr className="rule-styling"></hr> 
-        <MainHome />
-        <NewsAnnouncements/>
-        <Footer />
-    </div>
-,document.getElementById('root')); 
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </Router>,
+  
+    document.getElementById("root")
+);

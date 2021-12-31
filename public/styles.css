@@ -162,10 +162,87 @@
 }
 
 .footerATags{
-  
+  font-size: 1.5rem;
+  margin-left: 20%;
+  margin-right: 5%;
   color: white;
 }
 
 .footerATags:hover{
+  text-decoration: none;
   color: #9F9DDD;
 }
+
+/* Who are we section */
+.whoAreWe{
+  padding-top: 3%;
+  padding-bottom: 10%;
+  padding-left: 12%;
+  padding-right: 12%;
+  background-color: #01001F;
+}
+
+.whoAreWeContent{
+  margin-top: 1.5%;
+  margin-bottom: 5%;
+  background-color: #410F5D;
+  padding-top: 2%;
+  padding-bottom: 2.5%;
+  padding-left:5%;
+  padding-right: 5%;
+}
+
+.whoAreWeH1{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.whoAreWep{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Team Section */
+.teamContainer{
+  background-color: #410F5D;
+  padding-top: 3%;
+  padding-bottom: 10%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.ourTeamh1{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+/* Card Icons */
+.cardStyle{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  color: black;
+  background-color: #D17CFF;
+}
+
+.jobH6{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  color: black;
+}
+
+.cardIcons{
+  margin-left: 10%;
+  color: white;
+}
+
+.cardIcons:hover{
+  color:#5E5D8C;
+}
+

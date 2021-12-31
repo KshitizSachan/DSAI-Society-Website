@@ -1,5 +1,4 @@
 import React from "react";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown} from '@fortawesome/free-solid-svg-icons'
 

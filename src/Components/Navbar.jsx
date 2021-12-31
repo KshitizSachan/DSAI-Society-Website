@@ -1,11 +1,9 @@
 import React from "react";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
-// import bootstrap from 'bootstrap';
 
 function header() {
 	return (
@@ -28,13 +26,13 @@ function header() {
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 				<ul className="navbar-nav ml-auto mr-auto">
 					<li className="nav-item">
-						<a className="nav-link link-color" href="#">Home</a>
+						<a className="nav-link link-color" href="/">Home</a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link link-color" href="#">About</a>
+						<a className="nav-link link-color" href="/about">About</a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link link-color" href="#">Blogs</a>
+						<a className="nav-link link-color" href="/blog">Blogs</a>
 					</li>
 				</ul>
 
