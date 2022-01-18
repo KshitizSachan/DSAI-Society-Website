@@ -1,25 +1,34 @@
 import axios from "axios";
 
-
-function Wowdata() {
-
-  async function getUser() {
-    try {
-      await axios({
-        method: "get",
-        url: "https://dsai-serverside-code.herokuapp.com/home/announcements",
-        headers: {
-          
-      },
-      }).then(function (response) {
-        console.log(response.data)
-      });
-    } catch (error) {
-      console.error(error);
-    }
+async function getUser() {
+  try {
+    await axios({
+      method: "get",
+      url: "https://dsai-serverside-code.herokuapp.com/home/announcements",
+      headers: {},
+    }).then(function (response) {
+      return(response.data);
+    });
+  } catch (error) {
+    console.error(error);
   }
-
-  return <div><button onClick={getUser}><h2>Huge Ass Button</h2></button></div>;
 }
 
-export default Wowdata;
+async function getNews() {
+  try {
+    await axios({
+      method: "get",
+      url: "https://dsai-serverside-code.herokuapp.com/news",
+      headers: {},
+    }).then(function (response) {
+      return(response.data);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+export default {
+  getUser: getUser,
+  getNews: getNews
+}

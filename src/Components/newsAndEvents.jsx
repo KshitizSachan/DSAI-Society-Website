@@ -1,7 +1,28 @@
 import React from "react";
 import CarasolItem from "./carasoulItem.jsx";
+import { useEffect, useState } from "react";
+import data from '../RecieveData/data'
+import axios from "axios";
 
 function NewsAnnouncements(){
+
+    const [news, changenewsdata] = useState([])
+
+    useEffect(async () => {
+        try {
+            await axios({
+              method: "get",
+              url: "https://dsai-serverside-code.herokuapp.com/news",
+              headers: {},
+            }).then(function (response) {
+              changenewsdata(response.data)
+            });
+          } catch (error) {
+            console.error(error);
+          }
+      }, []);
+
+    
     return (
         <div className="newsAndAnnouncements">
             <h1 className="newsEventsH1">News And Events</h1>
@@ -10,22 +31,7 @@ function NewsAnnouncements(){
                         <h1 style={{textAlign:"center",marginTop:"5%",color:"#D17CFF"}}>Latest News</h1>
                             <div className="divNewsEvents">
                                 <ul>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
-                                    <li>lorem ipsum</li>
+                                    {news.map((newsitem) => <li>{newsitem.title}</li>)}
                                 </ul>
                             </div>
                     </div>
