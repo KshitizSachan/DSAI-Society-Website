@@ -149,7 +149,7 @@
 }
 
 .itemStyling{
-  margin-top:20%;
+  margin-top:15%;
   text-align: center;
 }
 
@@ -247,3 +247,53 @@
   color:#5E5D8C;
 }
 
+
+/* Blog Page */
+
+.blogP{
+  font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.blogH1{
+  font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.topBlog{
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-left: 12%;
+  padding-right: 12%;
+  background-image: url("./Images/blog_dark.jpg");
+}
+
+.blogMain{
+  padding-top: 5%;
+  padding-bottom: 3%;
+  padding-left: 12%;
+  padding-right: 12%;
+  background-color: #410F5D;
+}
+
+.individualBlog{
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #01001F;
+}
+
+.blogtitle{
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+}
+
+.blogdescription{
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+}

@@ -7,7 +7,7 @@ import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 function ContactCard(props){
     return (
-            <div className="col-md-3 col-lg-3 ">
+            <div className="col-md-6 col-lg-3 ">
                 <div className="card" style={{width:'18rem',marginTop:"10%"}}>
                     <img src={props.src} className="card-img-top CardImg" alt="..."/>
                     <div className="card-body cardStyle">
